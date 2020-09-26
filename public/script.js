@@ -1,6 +1,7 @@
 const api = axios.create({
-    baseURL: 'https://eheadlines-api.herokuapp.com/'
-  });
+    baseURL: 'http://localhost:3000'
+});
+//||'https://eheadlines-api.herokuapp.com/'
 const logo = document.getElementById('logo')
 const inpSearch = document.getElementById('inp-search')
 const dashboard = document.getElementById('dashboard')

@@ -304,10 +304,16 @@ button:focus{
     .stt-btn{
         width: 35px;
         height: 35px;
-        left: 1vw;
+        left: 3vw;
     }
     .fa.fa-arrow-up{
         font-size: 20px;
+    }
+    footer{
+        font-size: 12px;
+    }
+    footer div{
+        word-spacing: 2px;
     }
 
 }
@@ -324,5 +330,22 @@ button:focus{
     .stt-btn{
         width: 20px;
         height: 20px;
+    }
+}
+
+@media (max-width: 365px){
+    footer{
+        font-size: 10px;
+    }
+    footer div{
+        word-spacing: 1px;
+    }
+}
+@media (max-width: 300px){
+    footer{
+        font-size: 9.5px;
+    }
+    footer div{
+        word-spacing: 0.5px;
     }
 }
