@@ -7,20 +7,20 @@ const cors = require('cors')
 const router = require('./routes')
 
 const app = express()
-const server = http.createServer(app)
+const server = http.Server(app)
 
 app.get('/', (req, res) =>{
     return res.json('hello')
 })
 
-app.use(cors())
+app.use(cors()) 
 app.use(express.json())
-app.use(express.urlencoded({ extended: true }));
+//app.use(express.urlencoded({ extended: true }));
 //app.use(express.static(__dirname+'/public'))
 app.use(router)
 
 
-
-server.listen(3000 || process.env.PORT, () => {
-    console.log('Listening to port 3000')
+const PORT = process.env.PORT || 3000 
+server.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`)
 })
