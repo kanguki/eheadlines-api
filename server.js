@@ -9,9 +9,10 @@ const router = require('./routes')
 const app = express()
 const server = http.Server(app)
 
-app.get('/', (req, res) =>{
-    return res.json('hello')
-})
+// app.get('/', (req, res) => {
+//     app.render(express.static('public'))
+//     //return res.json('hello')
+// })
 
 app.use(cors()) 
 app.use(express.json())
