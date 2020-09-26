@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking news</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo" id="logo">Headlines</p></div>
+        <form class="search" id="search">    
+                <input type="text" id="inp-search" class="inp-search"/>
+                <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+        </form>
+    </nav>
+    <div class="top"></div>
+    <div class="pages">
+        <button class="page" id="p-1" onclick="choosePage(1)">1</button>
+        <button class="page" id="p-2" onclick="choosePage(2)">2</button>
+        <button class="page" id="p-3" onclick="choosePage(3)">3</button>
+        <button class="page" id="p-4" onclick="choosePage(4)">4</button>
+        <button class="page" id="p-5" onclick="choosePage(5)">5</button>
+    </div>
+    <div class="dashboard-container">
+        <div class="dashboard" id="dashboard"></div>
+    </div>
+    
+    <button class="stt-btn" onclick="scrollToTop()"><i class="fa fa-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div>  
+        <p>
+            Supported by <a href="https://newsapi.org/" class="resource" title="News API">News API</a>
+        </p>
+        <p>
+            Source code: <a href="https://github.com/kanguki/news-api" class="resource code" ><i class="fa fa-github"></i> Github </a>
+        </p>
+    </div>
+    <div>
+        <p>Contact me: </p>
+        <p title="Copy email to clipboard" onclick="copyToClipboard('kanguki2381@gmail.com')">
+            <a href="https://mail.google.com/" class="resource mail" ><i class="fa fa-envelope"></i> Gmail</a>
+        </p>
+    </div>
+</footer>
+</html>
